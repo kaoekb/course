@@ -7,7 +7,7 @@ ip route get 8.8.8.8 | grep -oP 'src \K\S+'
 ```
 Эта команда возвращает IP-адрес, с которого происходит выход в Интернет. `188.227.32.82`
 
-    ![img](img/1.png)
+![img](img/1.png)
 
 ### 2. Создать именованный пайп (named pipe) и вывести в файл через него вывод команды `ss -plnt`
 
@@ -25,7 +25,7 @@ cat < my_pipe > output_file.txt
 ```
 В результате файл `output_file.txt` будет содержать вывод команды `ss -plnt`.
 
-    ![img](img/2.png)
+![img](img/2.png)
 
 
 ### 3. Архивировать через именованный пайп
@@ -53,7 +53,7 @@ tar -cf archive.tar -C / -T my_archive_pipe
 echo "+%s" | date +"$(cat -)"
 ```
 
-    ![img](img/4.png)
+![img](img/4.png)
 
 
 ### 5. Использование HEREDOC для записи многострочного сообщения в файл
@@ -86,7 +86,7 @@ EOF
    reboot
    ```
 
-    ![img](img/5.png)
+![img](img/5.png)
 
 
 #### Восстановление системы:
@@ -100,13 +100,13 @@ EOF
      reboot
      ```
 
-    ![img](img/6.png)
+![img](img/6.png)
 
-    ![img](img/7.png)
+![img](img/7.png)
 
     Проверяем версию.
 
-    ![img](img/8.png)
+![img](img/8.png)
 
 2. Аналогичным образом через Emergency Mode 
 
